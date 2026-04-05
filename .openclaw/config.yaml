@@ -4,16 +4,17 @@ server:
 
 gateway:
   https:
-    enabled: false  # Pour commencer en local
-    cert: ~/.openclaw/ssl/openclaw.pem
-    key: ~/.openclaw/ssl/openclaw-key.pem
+    enabled: true  # Pour commencer en local
+    cert: ~/.openclaw/ssl/balrogardghs.github.io.pem
+    key: ~/.openclaw/ssl/balrogardghs.github.io-key.pem
 
   http:
-    enabled: true
+    enabled: false
 
   controlUi:
     allowedOrigins:
-      - "*"
+      - "https://balrogardghs.github.io/"
+      - "https://balrogardghs.github.io/*"
 
   endpoints:
     # Configuration par défaut
