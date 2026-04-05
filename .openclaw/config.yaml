@@ -1,0 +1,20 @@
+---
+server:
+  port: 8080
+
+gateway:
+  https:
+    enabled: false  # Pour commencer en local
+    cert: ~/.openclaw/ssl/openclaw.pem
+    key: ~/.openclaw/ssl/openclaw-key.pem
+
+  http:
+    enabled: true
+
+  controlUi:
+    allowedOrigins:
+      - "*"
+
+  endpoints:
+    # Configuration par défaut
+    # ...
